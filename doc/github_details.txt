@@ -1,0 +1,12 @@
+Java 17 Language Feature:
+	1. Sealed Class/Interface - permits, non-sealed, sealed
+	2. Switch - switch expression was constant and enum. But now any type.
+
+Java 16 Language Feature:
+	1. Record class - can be header param, all header param and record class are final.
+			  can't have instance member, can have static member and instance member.
+			 can have constructor.
+	2. Pattern matching for instance - removing casting type in instance of
+				Ex:  if(shape instanceof Rectangle) {Rectangle r = (Rectancle) shape}
+				But in latest, if (shape instance Rectangle r) {r.lenth * r.width;}
+					also if (shape instance Rectangle r && r.length > 0) {r.lenth * r.width;}
