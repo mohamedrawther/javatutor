@@ -1,5 +1,8 @@
 package com.jf.tutor.stream.data;
 
+import lombok.Data;
+
+@Data
 sealed public class AgentBase permits Agent, Address{
 
 	public AgentBase() {
@@ -12,4 +15,12 @@ sealed public class AgentBase permits Agent, Address{
 	}
 
 	private Integer id;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 }
